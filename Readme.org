@@ -1,0 +1,37 @@
+* Turing machine
+
+** Aim
+
+- Infinity tape
+
+- Dimensional tape
+
+- Multi tape
+
+- Simultaneous movements
+
+- Turing movements stop, left, right
+
+*** File Format
+
+#+BEGIN_SRC plain
+# Commentary
+# Specification of turing machine
+q1 q2 q3   # set Q states
+a1 a2 a3   # set ∑ - alphabet tape
+a1 a2 a3   # set ∑ - Writing turing head
+qx         # Initial state
+b          # Representation of empty char into tape
+q1 q3      # End states set F
+2          # Number of tapes
+
+# Transitions
+# q1 a1 q2 a2 m  # :: State, TapeItem, ToState, PutTapeItem, Move
+#+END_SRC
+
+** Brief
+
+
+** User Requirements
+
+** Developer Requirements
