@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Implementatio.iml" filepath="$PROJECT_DIR$/.idea/modules/Implementatio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Implementatio_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Implementatio_main.iml" group="Implementatio" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Implementatio_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Implementatio_test.iml" group="Implementatio" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TuringMachine.iml" filepath="$PROJECT_DIR$/.idea/modules/TuringMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TuringMachine_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TuringMachine_main.iml" group="TuringMachine" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TuringMachine_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TuringMachine_test.iml" group="TuringMachine" />
     </modules>
   </component>
 </project>

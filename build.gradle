@@ -11,28 +11,31 @@ apply plugin: 'java'
 sourceCompatibility = 1.8
 
 task runApp(type: JavaExec) {
-    classpath = sourceSets.main.runtimeClasspath
 
-    main = 'main.java.Main'
+  classpath = sourceSets.main.runtimeClasspath
 
-    // arguments to pass to the application
-    // args 'testStackClean.pda'
+  main = 'Main'
+
+  // arguments to pass to the application
+  args 'exampleFiles/copiaunos.tm'
+
+  standardInput = System.in
 }
 
 sourceSets.main.resources.srcDir 'src/main/java'
 
 jar {
-    manifest {
-        attributes 'Main-Class': 'main.java.Main'
-    }
+  manifest {
+    attributes 'Main-Class': 'Main'
+  }
 }
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
-    compile group: 'com.pholser', name: 'junit-quickcheck-core', version: '0.6.1'
-    compile group: 'com.pholser', name: 'junit-quickcheck-generators', version: '0.6.1'
+  testCompile group: 'junit', name: 'junit', version: '4.11'
+  compile group: 'com.pholser', name: 'junit-quickcheck-core', version: '0.6.1'
+  compile group: 'com.pholser', name: 'junit-quickcheck-generators', version: '0.6.1'
 }

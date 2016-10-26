@@ -30,3 +30,7 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+.directory
+.idea/modules/TuringMachine.iml
+.idea/modules/TuringMachine_main.iml
+.idea/modules/TuringMachine_test.iml

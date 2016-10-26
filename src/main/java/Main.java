@@ -1,34 +1,30 @@
 /**
- * Implementatio - Main.java 16/10/16
+ * Turing Machine - Main.java 16/10/16
  * <p>
  * Copyright 20XX Eleazar Díaz Delgado. All rights reserved.
  */
-package main.java;
+
+import turing_machine.controller.Controller;
+import turing_machine.model.TuringMachine;
 
 /**
- * TODO: Commenta algo
+ * Main of turing machine simulator, it could take a file by parameter
  *
  */
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+public class Main {
+    public static String USAGE = "./turingmachine [file_name]    // with definition of automaton";
+    public static void main(String[] args) throws Exception {
+        ParseCommands commands = new ParseCommands(args, USAGE);
 
-
-public class Main extends Application {
-    public static void main(String[] args) {
-        launch(args);
-    }
-
-    @Override
-    public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(ClassLoader.getSystemClassLoader().getResource("Main.fxml"));
-
-        Scene scene = new Scene(root);
-        primaryStage.setTitle("PushDown Automaton");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        Controller controller = new Controller();
+        try {
+            TuringMachine turingMachine = new TuringMachine(commands.getString());
+            controller.setTuringMachine(turingMachine);
+        }
+        catch (Exception e) {
+            controller.showErrorDialog(e.getMessage());
+        }
+        controller.options();
     }
 }
 

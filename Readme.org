@@ -25,10 +25,10 @@ a1 a2 a3   # set ∑ - Writing turing head
 qx         # Initial state
 b          # Representation of empty char into tape
 q1 q3      # End states set F
-# 2          # Number of tapes
+# 2          # Number of headers
 # Transitions
 # q1 a1 q2 a2 m  # :: forall a. State, TapeItem :: (size == a), ToState, PutTapeItem :: (size == a), Move :: {L, S, R)} //
-# Example two tapes
+# Example two headers
 q1 a1 q2 a2 m   q' a
 #+END_SRC
 

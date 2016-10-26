@@ -19,8 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Implementatio_main" target="1.5" />
-      <module name="Implementatio_test" target="1.5" />
+      <module name="TuringMachine_main" target="1.5" />
+      <module name="TuringMachine_test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

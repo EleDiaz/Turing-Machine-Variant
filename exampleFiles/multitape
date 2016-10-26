@@ -1,0 +1,20 @@
+# Multitape example
+q1 q2 q3
+a b
+a b .
+q1
+.
+q3
+2
+q1 a q1 a S a a R # Q1
+q1 b q1 b S a a R
+q1 a q1 a S b b R
+q1 b q1 b S b b R
+q1 a q2 a S . . L # End
+q2 a q2 a R a a L # Q2
+q2 b q2 b R b b L
+q2 . q3 . L . . R # End
+q3 a q3 a L a a S # Q3
+q3 b q3 b L a a S
+q3 a q3 a L b b S
+q3 b q3 b L b b S
