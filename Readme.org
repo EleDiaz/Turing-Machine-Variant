@@ -1,6 +1,6 @@
 * Turing machine
 
-** Aim
+** Features (No checked which are implemented)
 
 - Infinity tape
 
